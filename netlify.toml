@@ -1,7 +1,3 @@
-[build]
-  publish = "dist"  # Your build output directory
-  command = "npm run build"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -16,9 +12,3 @@
   from = "/about"
   to = "/about.html"
   status = 200
-
-# Error page handling
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 404
