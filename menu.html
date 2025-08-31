@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODEAT - Our Menu</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="menu.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="title">
+        <h1>FOODEAT</h1>
+      </div>
+      <div class="item" id="navMenu">
+        <div><a href="index.html">Home</a></div>
+        <div>Menu</div>
+        <div><a href="about.html">About</a></div>
+        <div>Account</div>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <section class="menu-header">
+      <h1>Our Delicious Menu</h1>
+      <p>Explore our wide selection of dishes made with the freshest ingredients</p>
+    </section>
+
+    <div class="menu-categories">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="appetizers">Appetizers</button>
+      <button class="category-btn" data-category="mains">Main Courses</button>
+      <button class="category-btn" data-category="desserts">Desserts</button>
+      <button class="category-btn" data-category="drinks">Drinks</button>
+    </div>
+
+    <div class="menu-container">
+      <!-- Appetizers -->
+      <div class="menu-item" data-category="appetizers">
+        <div class="menu-img">
+          <img src="src/assets/BruschettaPasta_NaptimeKitchenWeb-8-533x800.jpg" alt="Bruschetta">
+        </div>
+        <div class="menu-content">
+          <h3>Bruschetta <span class="price">$8.99</span></h3>
+          <p>Toasted bread topped with tomatoes, garlic, and fresh basil</p>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="appetizers">
+        <div class="menu-img">
+          <img src="src/assets/Homemade-Mozzarella-Sticks-Recipe-1-of-5.jpg" alt="Mozzarella Sticks">
+        </div>
+        <div class="menu-content">
+          <h3>Mozzarella Sticks <span class="price">$7.99</span></h3>
+          <p>Crispy fried mozzarella with marinara sauce</p>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+
+      <!-- Main Courses -->
+      <div class="menu-item" data-category="mains">
+        <div class="menu-img">
+          <img src="src/assets/Rigatoni-with-Italian-Sausage-2022-FEATURE.jpg" alt="Italian Pasta">
+        </div>
+        <div class="menu-content">
+          <h3>Italian Pasta <span class="price">$12.99</span></h3>
+          <p>Fresh pasta with authentic Italian tomato sauce and basil</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="mains">
+        <div class="menu-img">
+          <img src="src/assets/How-to-Grill-Steak-6.jpg" alt="Grilled Steak">
+        </div>
+        <div class="menu-content">
+          <h3>Grilled Steak <span class="price">$18.99</span></h3>
+          <p>Juicy grilled steak with roasted vegetables and special sauce</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="mains">
+        <div class="menu-img">
+          <img src="src/assets/seafoodsalad_1200x1800-9.jpg" alt="Seafood Salad">
+        </div>
+        <div class="menu-content">
+          <h3>Seafood Salad <span class="price">$15.99</span></h3>
+          <p>Fresh seafood mix with greens and our special dressing</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-item" data-category="desserts">
+        <div class="menu-img">
+          <img src="src/assets/Tiramisu_1426.webp" alt="Tiramisu">
+        </div>
+        <div class="menu-content">
+          <h3>Tiramisu <span class="price">$6.99</span></h3>
+          <p>Classic Italian dessert with coffee-soaked ladyfingers</p>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="desserts">
+        <div class="menu-img">
+          <img src="src/assets/17981-one-bowl-chocolate-cake-iii-DDMFS-beauty-4x3-d2e182087e4b42a3a281a0a355ea60d1.jpg" alt="Chocolate Cake">
+        </div>
+        <div class="menu-content">
+          <h3>Chocolate Cake <span class="price">$7.99</span></h3>
+          <p>Rich chocolate cake with ganache frosting</p>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-item" data-category="drinks">
+        <div class="menu-img">
+          <img src="src/assets/IMG_1986+(1).webp" alt="Fresh Lemonade">
+        </div>
+        <div class="menu-content">
+          <h3>Fresh Lemonade <span class="price">$3.99</span></h3>
+          <p>Homemade lemonade with mint leaves</p>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="drinks">
+        <div class="menu-img">
+          <img src="src/assets/how-to-make-italian-coffee-7.jpg" alt="Italian Coffee">
+        </div>
+        <div class="menu-content">
+          <h3>Italian Coffee <span class="price">$4.99</span></h3>
+          <p>Authentic Italian espresso with cream</p>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h1>FOODEAT</h1>
+      <div class="footer-content">
+        <div class="footer-section">
+          <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City,
+            Country</p>
+          <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+          <p><i class="fas fa-envelope"></i> info@foodeat.com</p>
+          <p><i class="fas fa-clock"></i> Open: 9:00 AM - 10:00 PM</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/menu.js"></script>
+  </body>
+</html>

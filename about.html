@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FOODEAT - About Us</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="title">
+                <h1>FOODEAT</h1>
+            </div>
+            <div class="item" id="navMenu">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="menu.html">Menu</a></div>
+                <div>About</div>
+                <div>Account</div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <section class="about-header">
+            <h1>About FOODEAT</h1>
+            <p>Our story of passion for delicious food and exceptional
+                service</p>
+        </section>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 2010, FOODEAT began as a small family restaurant
+                    with a big dream: to serve delicious, high-quality food that
+                    brings people together. Over the years, we've grown but our
+                    commitment to quality and service has never changed.</p>
+
+                <h2>Our Philosophy</h2>
+                <p>We believe that great food starts with great ingredients.
+                    That's why we source locally whenever possible and work with
+                    trusted suppliers who share our commitment to quality and
+                    sustainability.</p>
+
+                <h2>Our Team</h2>
+                <p>Our chefs bring years of experience and passion to every dish
+                    they create. From traditional recipes to innovative new
+                    creations, our team is dedicated to delivering an
+                    exceptional dining experience.</p>
+            </div>
+
+            <div class="about-image">
+                <img src="src/assets/pexels-narda-yescas-724842-1566837.jpg"
+                    alt="FOODEAT Restaurant Interior">
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <h2>Get in Touch</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <footer>
+            <h1>FOODEAT</h1>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street,
+                        City,
+                        Country</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@foodeat.com</p>
+                    <p><i class="fas fa-clock"></i> Open: 9:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="src/about.js"></script>
+    </body>
+</html>

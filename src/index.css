@@ -8,12 +8,8 @@
 body {
   background-size: cover;
   color: rgb(255, 255, 255);
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  padding-bottom: 50px;
 }
 
 .navbar {
@@ -33,7 +29,7 @@ body {
   display: flex;
 }
 
-.item div {
+.item a {
   margin-left: 30px;
   cursor: pointer;
   position: relative;
@@ -41,9 +37,11 @@ body {
   padding-bottom: 5px;
   margin-bottom: 10px;
   transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
 }
 
-.item div::after {
+.item a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -54,11 +52,11 @@ body {
   transition: width 0.3s ease-in-out;
 }
 
-.item div:hover::after {
+.item a:hover::after {
   width: 100%;
 }
 
-.item div:hover {
+.item a:hover {
   color: orange;
 }
 
@@ -173,7 +171,7 @@ body {
 }
 
 .rating {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -185,6 +183,7 @@ body {
   margin-top: 20px;
   border-top: 1px dashed rgba(255, 255, 255, 0.3);
   padding-top: 20px;
+  color: white;
 }
 
 .price {
@@ -258,7 +257,9 @@ footer {
   background: rgba(0, 0, 0, 0.7);
   padding: 40px 20px;
   text-align: center;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
 }
 
 footer h1 {
@@ -279,11 +280,6 @@ footer h1 {
 .footer-section {
   flex: 1;
   min-width: 250px;
-}
-
-.footer-logo {
-  width: 100px;
-  margin-bottom: 15px;
 }
 
 .footer-section p {
@@ -332,13 +328,13 @@ footer h1 {
   .btn-header {
     justify-content: center;
   }
-  
+
   .food-des {
     flex-direction: column;
     text-align: center;
     gap: 30px;
   }
-  
+
   .pasta-des {
     width: 90%;
   }
@@ -362,7 +358,7 @@ footer h1 {
     display: flex;
   }
 
-  .item div {
+  .item a {
     margin: 15px 0;
   }
 
@@ -386,12 +382,12 @@ footer h1 {
   .btn-header button {
     width: 100%;
   }
-  
+
   .food-card {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -418,15 +414,15 @@ footer h1 {
   .title {
     font-size: 1.5rem;
   }
-  
+
   .food-card > div {
     width: 90%;
   }
-  
+
   .food-des {
     padding: 20px;
   }
-  
+
   .pasta-des h1 {
     font-size: 2rem;
   }
